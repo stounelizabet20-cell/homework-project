@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rick and Morty Characters</h1>
+
+  <form id="search-form">
+    <input type="text" id="name-input" placeholder="Character name (e.g. rick)">
+    <select id="status-select">
+      <option value="">Any status</option>
+      <option value="alive">Alive</option>
+      <option value="dead">Dead</option>
+      <option value="unknown">Unknown</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+
+  <p id="message"></p>
+
+  <div id="characters"></div>
+
+  <div id="pagination">
+    <button id="prev-btn">Previous</button>
+    <span id="page-info"></span>
+    <button id="next-btn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

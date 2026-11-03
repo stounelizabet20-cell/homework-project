@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+input, select, button {
+  font-size: 1rem;
+  padding: 8px;
+}
+
+#message {
+  color: red;
+}
+
+#characters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #999;
+  padding: 8px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  margin: 8px 0 4px;
+}
+
+.card p {
+  margin: 2px 0;
+}
+
+#pagination {
+  margin-top: 16px;
+}
+
+@media (max-width: 800px) {
+  #characters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  #characters {
+    grid-template-columns: 1fr;
+  }
+
+  form input, form select, form button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
