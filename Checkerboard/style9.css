@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lenta {
+    width: min(100vw, 100vh);
+    height: min(100vw, 100vh);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.langelis {
+    background-color: white;
+}
+
+.langelis:nth-child(16n + 1),
+.langelis:nth-child(16n + 3),
+.langelis:nth-child(16n + 5),
+.langelis:nth-child(16n + 7),
+.langelis:nth-child(16n + 10),
+.langelis:nth-child(16n + 12),
+.langelis:nth-child(16n + 14),
+.langelis:nth-child(16n + 16) {
+    background-color: black;
+}
