@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Užrašų knygelė</title>
+  <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+  <header>
+    <h1>Užrašų knygelė</h1>
+  </header>
+
+  <main>
+    <form id="note-form">
+      <input type="hidden" id="note-id">
+
+      <label for="note-title">Pavadinimas</label>
+      <input type="text" id="note-title" required>
+
+      <label for="note-text">Tekstas</label>
+      <textarea id="note-text" rows="4" required></textarea>
+
+      <label for="note-status">Būsena</label>
+      <select id="note-status">
+        <option value="aktyvus">Aktyvus</option>
+        <option value="atlikta">Atlikta</option>
+        <option value="svarbu">Svarbu</option>
+      </select>
+
+      <button type="submit" id="save-button">Pridėti</button>
+    </form>
+
+    <input type="search" id="search-field" placeholder="Paieška...">
+
+    <section id="notes-container"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

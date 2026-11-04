@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: #1e2230;
+  color: #eaeaea;
+}
+
+header {
+  background: #3b5bdb;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+form {
+  background: #2a3042;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #3b5bdb;
+  color: white;
+  cursor: pointer;
+}
+
+#save-button {
+  width: 100%;
+  padding: 12px;
+}
+
+#search-field {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #2a3042;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-top: 4px solid #3b5bdb;
+}
+
+.card.atlikta {
+  border-top-color: #2f9e44;
+  opacity: 0.7;
+}
+
+.card.svarbu {
+  border-top-color: #e03131;
+}
+
+.card h3 {
+  margin: 0 0 5px;
+}
+
+.card .date {
+  font-size: 12px;
+  color: #9aa0b5;
+}
+
+.card .actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card select {
+  width: auto;
+  margin: 0;
+  padding: 7px;
+}
+
+.delete-btn {
+  background: #e03131;
+}
